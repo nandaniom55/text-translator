@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>react-text-translator</title>
+
+    <link rel="stylesheet" href="./src/index.css">
+  </head>
+  <body style="display: -ms-flexbox; background-color: rgb(76, 50, 50);">
+    <div id="root" style="background-color: beige; text-decoration: aliceblue; text-align: center; display: flexbox;">
+      <h1 style="color: gold; display: flexbox; flex-direction: column; -ms-flex-align: center;"> Text Translator</h1>
+      <div style="height: 10em; width: 10em; display: flexbox; flex-direction: column; -ms-flex-align: justify-self: start;;">
+        <textarea name="input-text" placeholder="type your english text" style="height: 30; width: 500px; background-color: antiquewhite; display: flexbox; flex-direction: column; -ms-flex-align: center; border: solid black;"></textarea>
+        <textarea name="input-text" placeholder="your converted text" style="background-color: antiquewhite; height:30; width: 500px; display: flexbox; flex-direction: column; -ms-flex-align: center; border: solid black ;"></textarea>  
+      </div>
+        <div style="text-align: center; display: flex; flex-direction: row; -ms-flex-align: center;">
+        <p>Converted into</p>
+        <select name="value" style=" background-color: aqua; ">
+        <option value="">Select</option>
+        <option value="hi">Hindi</option>
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+      </select> 
+      </div>
+    </div>
+    <button type="button" action="clickable" style="background-color: blue; text-align: center; color: aliceblue; height: 5em; width: 500px; font: 1em sans-serif; border:goldenrod 1px; -ms-flex-align: center;">Translate</button>
+    <script type="module" src="./src/main.jsx"></script>
+  </body>
+</html>
